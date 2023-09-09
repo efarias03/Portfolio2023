@@ -1,8 +1,5 @@
-# React + Vite
+# ReactThreeFiber + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm run dev
+![imagem_2023-09-09_194858145](https://github.com/efarias03/ReactThreeFiber-Vite-StarterPack/assets/89557986/b4e34bf4-c174-4aaa-ac3d-5d0ae851ba6d)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
