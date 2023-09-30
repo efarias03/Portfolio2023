@@ -1,13 +1,30 @@
-import { Canvas } from "@react-three/fiber";
-import { Experience } from "./components/Experience";
+import { NavBar } from "./components/NavBar";
+import { HeroSection } from "./components/Sections/Hero";
 
-function App() {
+import { ProjectsSection } from "./components/Sections/Projects";
+
+const Background = ({ top = "0%" }) => (
+  <div className={`background`} style={{ top: top }}></div>
+);
+
+
+const Overlay = () => {
   return (
-    <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
-      <color attach="background" args={["#ececec"]} />
-      <Experience />
-    </Canvas>
+    <div id="overlay">
+      <NavBar />
+      <HeroSection />
+      <ProjectsSection />
+      {/* <HeroSection /> */}
+    </div>
   );
-}
+};
 
-export default App;
+export const App = () => {
+  return (
+    <>
+      <Background />
+      <Overlay />
+      {/* <Cursor /> */}
+    </>
+  );
+};
