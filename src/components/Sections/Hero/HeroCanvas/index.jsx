@@ -12,7 +12,8 @@ export function HeroCanvas() {
             position: "absolute",
             top: "0%",
         }}
-        dpr={[1, 2]}
+        dpr={[1, 1]}
+        frameloop="demand"
         >
             {/* <color attach="background" args={['#0a0d14']} /> */}
             <OrbitControls
