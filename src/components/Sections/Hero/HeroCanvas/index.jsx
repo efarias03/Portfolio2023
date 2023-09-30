@@ -1,22 +1,6 @@
 import { Canvas } from "@react-three/fiber"
 import { DavidModel } from "../../../David"
-import { AsciiRenderer, Environment, Lightformer, OrbitControls, SpotLight } from "@react-three/drei"
-import { DepthOfField, EffectComposer, Glitch, Noise, Scanline } from "@react-three/postprocessing"
-import { useEffect, useState } from "react";
-
-const isMobile = window.innerWidth < 768;
-
-
-const Ground = () => {
-    return (
-        <group>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} scale={[10, 10, 1]} position={[0, -7, 0]} >
-                <planeGeometry args={[10, 10, 10]} />
-                <meshNormalMaterial color="hotpink" wireframe={false} />
-            </mesh>
-        </group>
-    )
-}
+import { Environment, OrbitControls } from "@react-three/drei"
 
 
 export function HeroCanvas() {

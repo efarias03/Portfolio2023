@@ -33,4 +33,4 @@ export function DavidModel(props) {
   )
 }
 
-useGLTF.preload('/michelangelos_david_optimised.glb')
+useGLTF.preload('michelangelos_david_optimised.glb')
