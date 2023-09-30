@@ -13,11 +13,11 @@ import { useGLTF } from '@react-three/drei'
 export function DavidModel(props) {
   const { nodes, materials } = useGLTF('michelangelos_david_optimised.glb')
   // console.log(materials);
-  materials.material_0.metalness = 1;
+  materials.material_0.metalness = 0.5;
   materials.material_0.roughness = 1;
-  materials.material_0.color.r = 255;
-  materials.material_0.color.g = 223;
-  materials.material_0.color.b = 1;
+  materials.material_0.color.r = 180;
+  materials.material_0.color.g = 150;
+  materials.material_0.color.b = 100;
 
   return (
     <group {...props} dispose={null}>

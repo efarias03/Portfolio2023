@@ -25,9 +25,9 @@ export function HeroCanvas() {
             {/* <ambientLight intensity={0.1} /> */}
 
             <DavidModel />
-            <Environment
-                preset="night"
-            />
+
+            <pointLight position={[-10, 0, 0]} />
+            <pointLight color={"#000000"} position={[10, 0, 0]} />
 
         </Canvas>
     )
