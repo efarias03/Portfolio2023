@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/head-of-michelangelos-david-optimised-d2
 Title: Head Of Michelangelo's David, Optimised
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function DavidModel(props) {
@@ -24,7 +24,6 @@ export function DavidModel(props) {
       <mesh 
       geometry={nodes.Object_2.geometry} 
       material={materials.material_0}
-      receiveShadow
       position={[-4, -5, 3.5]} 
       rotation={[3.129, 0, 0]} 
       scale={0.05}
