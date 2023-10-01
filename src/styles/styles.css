@@ -180,7 +180,6 @@ html {
   justify-content: center;
   width: 50%;
   height: 10%;
-  color: #D3D9E9;
   position: fixed;
   top: 2.5%;
   left: 25%;
@@ -209,6 +208,8 @@ html {
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  color: #D3D9E9;
+  text-decoration: none;
   transition: 0.5s ease;
 }
 .default-nav ul li a:hover {

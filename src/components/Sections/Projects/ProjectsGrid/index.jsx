@@ -33,7 +33,7 @@ function Project({ i = "01", title = "Default", tags = ["Default"], description 
                     <div className="description-images">
                         <img loading="lazy" draggable={false} src={image} />
                     </div>
-                    <a className="project-link" href={url}>
+                    <a className="project-link" href={url} target="blank">
                         See Project
                     </a>
                 </div>
@@ -74,7 +74,7 @@ export default function ProjectGrid() {
                 "Figma"
             ],
             description: "Basic wireframes for a Delivery App that I did long time ago.",
-            image: "pokedex.jpg",
+            image: "wireframedelivery.jpg",
             url: "https://www.figma.com/file/jI0D0oF7JY02FfU79LrS8W/Wireframes---Faculdade?type=design&node-id=0%3A1&mode=design&t=TJQCUPyGY5ABy9U5-1"
         },
         {

@@ -5,12 +5,12 @@ export const NavBar = () => {
             <ul className="text-medium">
                 <li>
                     <div>
-                        <a>Home</a>
+                        <a href="#">Home</a>
                     </div>
                 </li>
                 <li>
                     <div className="li">
-                        <a>Projects</a>
+                        <a href="#projects-section">Projects</a>
                     </div>
                 </li>
                 <li>

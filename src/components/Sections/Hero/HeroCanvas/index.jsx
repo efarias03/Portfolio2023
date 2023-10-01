@@ -17,6 +17,7 @@ export function HeroCanvas() {
                 dpr={[1, 1]}
                 frameloop="demand"
             >
+                <fog attach={"fog"} args={["#0a0d14", 2, 20]} />
                 <Suspense fallback={null}>
                     {/* <color attach="background" args={['#0a0d14']} /> */}
                     <OrbitControls
