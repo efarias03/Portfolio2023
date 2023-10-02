@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function DavidModel(props) {
-  const { nodes, materials } = useGLTF('public/michelangelos_david_optimised.glb')
+  const { nodes, materials } = useGLTF('michelangelos_david_optimised.glb')
   // console.log(materials);
   materials.material_0.metalness = 0.5;
   materials.material_0.roughness = 1;
@@ -32,4 +32,4 @@ export function DavidModel(props) {
   )
 }
 
-useGLTF.preload('public/michelangelos_david_optimised.glb')
+useGLTF.preload('michelangelos_david_optimised.glb')

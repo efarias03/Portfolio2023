@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber"
 import { DavidModel } from "../../../David"
-import { Environment, Loader, OrbitControls } from "@react-three/drei"
-import { Suspense } from "react"
+import { OrbitControls } from "@react-three/drei"
 
 
 export function HeroCanvas() {
@@ -18,7 +17,7 @@ export function HeroCanvas() {
                 frameloop="demand"
             >
                 <fog attach={"fog"} args={["#0a0d14", 2, 20]} />
-                <Suspense fallback={null}>
+                
                     {/* <color attach="background" args={['#0a0d14']} /> */}
                     <OrbitControls
                         enableZoom={false}
@@ -33,10 +32,7 @@ export function HeroCanvas() {
 
                     <pointLight position={[-10, 0, 0]} />
                     <pointLight color={"#000000"} position={[10, 0, 0]} />
-
-                </Suspense>
             </Canvas>
-            <Loader />
         </>
     )
 }
