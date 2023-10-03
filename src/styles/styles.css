@@ -18,22 +18,6 @@
     transform: translateY(0%);
   }
 }
-@keyframes spawnSectionLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes spawnSectionRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -276,9 +260,6 @@ html {
 #hero-section b {
   color: #81A6FD;
 }
-#hero-section .hero-content-left {
-  animation: spawnSectionLeft 1s ease forwards;
-}
 
 .scroll-div {
   display: flex;
@@ -309,18 +290,23 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 90%;
+  width: 99%;
+  height: 99%;
   border-radius: 50%;
+  border: 5px solid #81A6FD;
   background-color: #0a0d14;
   transition: 0.5s ease;
   z-index: 1;
 }
+.scroll-div .scroll-arrow a {
+  width: 120%;
+  height: 120%;
+}
 .scroll-div .scroll-arrow svg {
   pointer-events: none;
   position: relative;
-  top: -5%;
-  left: 23%;
+  top: 20%;
+  left: 25%;
   rotate: 10deg;
   width: 50%;
   height: 50%;
