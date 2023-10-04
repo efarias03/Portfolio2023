@@ -18,8 +18,6 @@ export function ProjectsContent() {
         }
 
         words.push(obj);
-        
-            console.log(obj.letters)
     })
 
     return (
