@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 function Project({ i = "01", title = "Default", tags = ["Default"], description = "Description", image = "", url = "" }) {
     const [clicked, click] = useState(false);
-
-    // useEffect(() => {
-    //     console.log(clicked);
-    // }, [clicked])
 
     return (
         <div className={`project ${!clicked ? "" : "clicked"}`} onClick={() => click(!clicked)}>

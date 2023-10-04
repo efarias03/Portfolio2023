@@ -26,6 +26,16 @@
     }
 }
 
+@keyframes animateChar {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-300%);
+    }
+}
+
 // Reset
 
 * {
@@ -181,6 +191,17 @@ html {
     border-radius: 2rem;
 
     transition: .5s ease;
+
+}
+
+.default-button::before {
+    content: "";
+    position: relative;
+    top: 0%;
+    width: 1rem;
+    height: 1rem;
+
+    background-color: #ffffff;
 }
 
 .default-button:hover {
@@ -409,11 +430,17 @@ html {
 }
 
 #projects-section {
-
+    padding-top: 10rem;
     height: auto;
 }
 
 #projects-section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1rem;
+    width: 100%;
     height: 15rem;
 }
 
@@ -425,6 +452,8 @@ html {
 
     width: 100%;
     height: auto;
+
+    padding-bottom: 10rem;
 
     // background-color: #273861;
 }
@@ -555,12 +584,12 @@ html {
 
         height: 6rem;
 
-        transition: 1s ease;
+        transition: .5s ease;
 
         li {
             div {
                 border-color: #ffffff;
-                transition: 1s ease;
+                transition: .5s ease;
             }
         }
     }
@@ -626,14 +655,12 @@ html {
 
                 border: 1px solid #ffffff5b;
                 border-radius: 15px;
-
-                transition: .5s ease;
             }
         }
     }
 }
 
-.project-infos:hover {
+.project:hover>.project-infos {
     color: #ffffff;
     border-color: #ffffff;
 
@@ -641,9 +668,51 @@ html {
 
     li {
         div {
+            color: #ffffff;
             border-color: #ffffff;
+
             transition: .5s ease;
         }
+    }
+}
+
+.splitted-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2%;
+
+    width: 100%;
+    height: 30%;
+
+    overflow: hidden;
+    // background-color: #273861;
+
+    .splitted-word, .splitted-letters {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        .splitted-letters {
+            flex-direction: column;
+            
+            font-size: clamp(1.2rem, 4vw, 5rem);
+
+            transform: translateY(38%);
+        }
+    }
+}
+
+
+// Contact 
+
+#contact-section {
+    background-color: #eaeaea;
+    color: #0a0d14;
+
+    #contact-header {
+        padding-top: 10rem;
     }
 }
 
@@ -673,6 +742,13 @@ html {
         display: none;
     }
 
+    .splitted-text {
+        height: 10% !important;
+
+        .splitted-letters {
+            transform: translateY(720%) !important;
+        }
+    }
 
 }
 
@@ -716,55 +792,63 @@ html {
     .project {
         .project-content {
             .content-description {
-    
+
                 .description-images {
-    
+
                     width: 90%;
                     height: 90%;
-    
+
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-    
+
                 .project-link {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-    
+
                     background-color: #273861;
                     color: #ffffff;
                     text-decoration: none;
-    
-    
+
+
                     text-wrap: nowrap;
                     cursor: pointer;
-    
+
                     width: 10rem;
                     height: 2rem;
-    
+
                     border-radius: 15px;
                     transition: .5s ease;
-    
+
                     a {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-    
+
                         width: 100%;
-    
+
                     }
-    
+
                 }
-    
+
                 .project-link:hover {
                     background-color: #81A6FD;
                     transition: .5s ease;
                 }
-    
+
             }
+        }
+    }
+
+    .splitted-text {
+        height: 20% !important;
+
+        .splitted-letters {
+            transform: translateY(550%) !important;
         }
     }
 

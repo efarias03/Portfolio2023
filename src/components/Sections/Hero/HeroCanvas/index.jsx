@@ -1,9 +1,12 @@
 import { Canvas } from "@react-three/fiber"
 import { DavidModel } from "../../../David"
-import { OrbitControls } from "@react-three/drei"
+import { PerformanceMonitor } from "@react-three/drei"
+import { useState } from "react"
+import { round } from "lodash";
 
 
 export function HeroCanvas() {
+    const [dpr, setDpr] = useState(1);
 
     return (
         <>
@@ -13,25 +16,18 @@ export function HeroCanvas() {
                     position: "absolute",
                     top: "0%",
                 }}
-                dpr={[1, 1]}
-                frameloop="demand"
+                dpr={dpr}
             >
-                <fog attach={"fog"} args={["#0a0d14", 2, 20]} />
-                
-                    {/* <color attach="background" args={['#0a0d14']} /> */}
-                    <OrbitControls
-                        enableZoom={false}
-                        enableRotate={true}
-                        minDistance={10}
-                        autoRotate
-                        autoRotateSpeed={1}
-                    />
-                    {/* <ambientLight intensity={0.1} /> */}
+                <PerformanceMonitor onChange={({ factor }) => setDpr(round(0.5 + 1.5 * factor, 1))}>
+                    <fog attach={"fog"} args={["#0a0d14", 2, 20]} />
+
 
                     <DavidModel />
 
                     <pointLight position={[-10, 0, 0]} />
+                    <pointLight color={"#A75744"} position={[-10, 0, 0]} />
                     <pointLight color={"#000000"} position={[10, 0, 0]} />
+                </PerformanceMonitor>
             </Canvas>
         </>
     )

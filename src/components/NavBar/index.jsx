@@ -15,7 +15,7 @@ export const NavBar = () => {
                 </li>
                 <li>
                     <div className="li">
-                        <a>Contacts</a>
+                        <a>Contact</a>
                     </div>
                 </li>
             </ul>

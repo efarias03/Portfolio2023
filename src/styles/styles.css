@@ -18,6 +18,14 @@
     transform: translateY(0%);
   }
 }
+@keyframes animateChar {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -147,6 +155,15 @@ html {
   border: 3px solid #ffffff;
   border-radius: 2rem;
   transition: 0.5s ease;
+}
+
+.default-button::before {
+  content: "";
+  position: relative;
+  top: 0%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
 }
 
 .default-button:hover {
@@ -321,10 +338,16 @@ html {
 }
 
 #projects-section {
+  padding-top: 10rem;
   height: auto;
 }
 
 #projects-section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
   height: 15rem;
 }
 
@@ -335,6 +358,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
+  padding-bottom: 10rem;
 }
 
 .project {
@@ -427,11 +451,11 @@ html {
   color: #ffffff;
   border-color: #ffffff;
   height: 6rem;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 .project.clicked .project-infos li div {
   border-color: #ffffff;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .project-infos {
@@ -479,17 +503,45 @@ html {
   padding: 0 15px;
   border: 1px solid rgba(255, 255, 255, 0.3568627451);
   border-radius: 15px;
-  transition: 0.5s ease;
 }
 
-.project-infos:hover {
+.project:hover > .project-infos {
   color: #ffffff;
   border-color: #ffffff;
   transition: 0.5s ease;
 }
-.project-infos:hover li div {
+.project:hover > .project-infos li div {
+  color: #ffffff;
   border-color: #ffffff;
   transition: 0.5s ease;
+}
+
+.splitted-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+.splitted-text .splitted-word, .splitted-text .splitted-letters {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.splitted-text .splitted-word .splitted-letters, .splitted-text .splitted-letters .splitted-letters {
+  flex-direction: column;
+  font-size: clamp(1.2rem, 4vw, 5rem);
+  transform: translateY(38%);
+}
+
+#contact-section {
+  background-color: #eaeaea;
+  color: #0a0d14;
+}
+#contact-section #contact-header {
+  padding-top: 10rem;
 }
 
 @media (max-width: 575px) {
@@ -507,6 +559,12 @@ html {
   }
   .project-expand {
     display: none;
+  }
+  .splitted-text {
+    height: 10% !important;
+  }
+  .splitted-text .splitted-letters {
+    transform: translateY(720%) !important;
   }
 }
 @media (max-width: 768px) {
@@ -567,6 +625,12 @@ html {
   .project .project-content .content-description .project-link:hover {
     background-color: #81A6FD;
     transition: 0.5s ease;
+  }
+  .splitted-text {
+    height: 20% !important;
+  }
+  .splitted-text .splitted-letters {
+    transform: translateY(550%) !important;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {

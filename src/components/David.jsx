@@ -7,29 +7,39 @@ Source: https://sketchfab.com/3d-models/head-of-michelangelos-david-optimised-d2
 Title: Head Of Michelangelo's David, Optimised
 */
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
+
 
 export function DavidModel(props) {
-  const { nodes, materials } = useGLTF('michelangelos_david_optimised.glb')
+  const ref = useRef();
+
+  useFrame(({ clock }) => {
+    const a = clock.getElapsedTime() * 0.1;
+    ref.current.rotation.y = a;
+  })
+
+  const { nodes, materials } = useGLTF('david.glb')
   // console.log(materials);
-  materials.material_0.metalness = 0.5;
-  materials.material_0.roughness = 1;
-  materials.material_0.color.r = 180;
-  materials.material_0.color.g = 150;
-  materials.material_0.color.b = 100;
+  materials.material_0.metalness = 1;
+  materials.material_0.roughness = 0.4;
+  materials.material_0.color.r = 100;
+  materials.material_0.color.g = 100;
+  materials.material_0.color.b = 180;
 
   return (
     <group {...props} dispose={null}>
       <mesh 
+      ref={ref}
       geometry={nodes.Object_2.geometry} 
       material={materials.material_0}
-      position={[-4, -5, 3.5]} 
+      position={[0, 1, -8]} 
       rotation={[3.129, 0, 0]} 
-      scale={0.05}
+      scale={0.065}
       />
     </group>
   )
 }
 
-useGLTF.preload('michelangelos_david_optimised.glb')
+useGLTF.preload('david.glb')
