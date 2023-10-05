@@ -4,8 +4,6 @@ import { useInView } from 'react-intersection-observer';
 export function ProjectsContent() {
     const { ref, inView, entry } = useInView();
 
-    console.log(inView);
-
     const text = "Here are some things I did.".split(" ");
     let words = [];
 
