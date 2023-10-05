@@ -12,10 +12,7 @@ const Background = ({ top = "0%" }) => (
 const Overlay = () => {
   return (
     <div id="overlay">
-      <NavBar />
-      <HeroContent />
-      <ProjectsContent />
-      <ContactContent />
+
     </div>
   );
 };
@@ -23,8 +20,10 @@ const Overlay = () => {
 export const App = () => {
   return (
     <>
-      <Background />
-      <Overlay />
+      <NavBar />
+      <HeroContent />
+      <ProjectsContent />
+      <ContactContent />
     </>
   );
 };

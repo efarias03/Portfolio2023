@@ -49,21 +49,6 @@ html {
   overflow-y: auto;
 }
 
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -10;
-  padding-top: 10rem;
-  background-color: #0a0d14;
-}
-
-#overlay {
-  width: 100%;
-  height: 100%;
-}
-
 .title-large {
   font-size: 8rem;
 }
@@ -253,21 +238,6 @@ html {
   -webkit-backdrop-filter: blur(4px);
 }
 
-#overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 5;
-  gap: 10rem;
-}
-
-#hero-canvas {
-  position: absolute;
-  left: -10%;
-  z-index: -1;
-  transition: 0.5s ease;
-}
-
 #hero-section {
   padding-top: 1.5rem;
 }
@@ -276,6 +246,12 @@ html {
 }
 #hero-section b {
   color: #81A6FD;
+}
+#hero-section #hero-left-text {
+  margin-top: 5%;
+}
+#hero-section #hero-right-text {
+  margin-top: 20%;
 }
 
 .scroll-div {
@@ -578,9 +554,11 @@ html {
   .title-large {
     font-size: 3.25rem;
   }
-  #hero-canvas {
-    left: 0%;
-    transition: 0.5s ease;
+  #hero-section {
+    padding-top: 25%;
+  }
+  #hero-section #hero-right-text {
+    margin-top: 5%;
   }
   #projects-canvas {
     width: 100%;
