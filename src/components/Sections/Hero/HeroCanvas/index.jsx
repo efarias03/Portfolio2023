@@ -19,14 +19,12 @@ export function HeroCanvas() {
                 dpr={dpr}
             >
                 <PerformanceMonitor onChange={({ factor }) => setDpr(round(0.5 + 1.5 * factor, 1))}>
-                    <fog attach={"fog"} args={["#0a0d14", 2, 20]} />
 
 
                     <DavidModel />
 
                     <pointLight position={[-10, 0, 0]} />
                     <pointLight color={"#A75744"} position={[-10, 0, 0]} />
-                    <pointLight color={"#000000"} position={[10, 0, 0]} />
                 </PerformanceMonitor>
             </Canvas>
         </>

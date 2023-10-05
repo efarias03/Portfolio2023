@@ -22,11 +22,11 @@ export function DavidModel(props) {
 
   const { nodes, materials } = useGLTF('david.glb')
   // console.log(materials);
-  materials.material_0.metalness = 1;
-  materials.material_0.roughness = 0.4;
-  materials.material_0.color.r = 100;
-  materials.material_0.color.g = 100;
-  materials.material_0.color.b = 180;
+  materials.material_0.metalness = 0.1;
+  materials.material_0.roughness = 1;
+  materials.material_0.color.r = 200;
+  materials.material_0.color.g = 200;
+  materials.material_0.color.b = 200;
 
   return (
     <group {...props} dispose={null}>

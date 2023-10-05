@@ -18,6 +18,6 @@ export const HeroContent = () => (
             </div>
         </div>
 
-        {/* <HeroCanvas /> */}
+        <HeroCanvas />
     </section>
 )
