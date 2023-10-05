@@ -438,10 +438,42 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     gap: 1rem;
     width: 100%;
     height: 15rem;
+
+    .splitted-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 2%;
+    
+        width: 100%;
+        height: 30%;
+    
+        overflow: hidden;
+        // background-color: #273861;
+    
+        .splitted-word {
+            position: relative;
+            top: 150%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .splitted-letters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            font-size: 3rem;
+
+        }
+    }
 }
 
 .projects-grid {
@@ -676,33 +708,7 @@ html {
     }
 }
 
-.splitted-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    gap: 2%;
-
-    width: 100%;
-    height: 30%;
-
-    overflow: hidden;
-    // background-color: #273861;
-
-    .splitted-word, .splitted-letters {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-
-        .splitted-letters {
-            flex-direction: column;
-            
-            font-size: clamp(1.2rem, 4vw, 5rem);
-
-            transform: translateY(38%);
-        }
-    }
-}
 
 
 // Contact 
@@ -733,23 +739,30 @@ html {
 
     .project-infos {
 
+        .project-expand {
+            display: none;
+        }
         li {
             font-size: 0.8rem;
         }
     }
-
-    .project-expand {
-        display: none;
-    }
-
-    .splitted-text {
-        height: 10% !important;
-
-        .splitted-letters {
-            transform: translateY(720%) !important;
+    
+    #projects-section-header {
+    
+        .splitted-text {
+            height: 15%;
+    
+            .splitted-word {
+                top: 100%;
+            }
+            
+            .splitted-letters {
+        
+                font-size: 1.3rem;
+                transform: translateY(76%);
+            }
         }
     }
-
 }
 
 
@@ -841,14 +854,6 @@ html {
                 }
 
             }
-        }
-    }
-
-    .splitted-text {
-        height: 20% !important;
-
-        .splitted-letters {
-            transform: translateY(550%) !important;
         }
     }
 

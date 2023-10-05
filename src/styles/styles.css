@@ -350,6 +350,29 @@ html {
   width: 100%;
   height: 15rem;
 }
+#projects-section-header .splitted-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+#projects-section-header .splitted-text .splitted-word {
+  position: relative;
+  top: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects-section-header .splitted-text .splitted-letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3rem;
+}
 
 .projects-grid {
   display: flex;
@@ -516,26 +539,6 @@ html {
   transition: 0.5s ease;
 }
 
-.splitted-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2%;
-  width: 100%;
-  height: 30%;
-  overflow: hidden;
-}
-.splitted-text .splitted-word, .splitted-text .splitted-letters {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-.splitted-text .splitted-word .splitted-letters, .splitted-text .splitted-letters .splitted-letters {
-  flex-direction: column;
-  font-size: clamp(1.2rem, 4vw, 5rem);
-  transform: translateY(38%);
-}
-
 #contact-section {
   background-color: #eaeaea;
   color: #0a0d14;
@@ -554,17 +557,21 @@ html {
   .project.clicked {
     height: 80rem;
   }
+  .project-infos .project-expand {
+    display: none;
+  }
   .project-infos li {
     font-size: 0.8rem;
   }
-  .project-expand {
-    display: none;
+  #projects-section-header .splitted-text {
+    height: 15%;
   }
-  .splitted-text {
-    height: 10% !important;
+  #projects-section-header .splitted-text .splitted-word {
+    top: 100%;
   }
-  .splitted-text .splitted-letters {
-    transform: translateY(720%) !important;
+  #projects-section-header .splitted-text .splitted-letters {
+    font-size: 1.3rem;
+    transform: translateY(76%);
   }
 }
 @media (max-width: 768px) {
@@ -625,12 +632,6 @@ html {
   .project .project-content .content-description .project-link:hover {
     background-color: #81A6FD;
     transition: 0.5s ease;
-  }
-  .splitted-text {
-    height: 20% !important;
-  }
-  .splitted-text .splitted-letters {
-    transform: translateY(550%) !important;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {

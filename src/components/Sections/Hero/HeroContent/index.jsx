@@ -1,5 +1,4 @@
 import { ScrollCircle } from "../../../ScrollComponent";
-import { HeroCanvas } from "../HeroCanvas";
 
 export const HeroContent = () => (
     <section id="hero-section" className="default-section flex">
@@ -17,7 +16,5 @@ export const HeroContent = () => (
                 <ScrollCircle />
             </div>
         </div>
-
-        <HeroCanvas />
     </section>
 )
