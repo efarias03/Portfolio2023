@@ -238,7 +238,7 @@ html {
 }
 
 #hero-section {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-bottom: 5.5rem;
   background-color: #ebebeb;
   color: #0a0d14;
@@ -582,7 +582,7 @@ html {
     font-size: 3.25rem;
   }
   #hero-section {
-    padding-top: 25%;
+    padding-top: 20%;
   }
   #hero-section #hero-right-text {
     margin-top: 5%;
