@@ -5,7 +5,9 @@ export function ContactContent() {
     return (
         <section id="contact-section" className="default-section column flex">
             
-                <h1>Send a Message </h1>
+                <div className="default-container">
+                    <h1>Want to know me?</h1>
+                </div>
 
                 <ContactForm />
         </section>
