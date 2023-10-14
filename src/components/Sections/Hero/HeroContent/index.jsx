@@ -12,7 +12,7 @@ export const HeroContent = () => (
                 <p className="text-large stroke-black hero-content-right">
                     <b>Brazilian</b> Front End Developer with a variety of tools for my team. I love working out, watching <b>anime</b>, listening some cool <b>songs</b>, playing <b>videogames</b> and of course <b>coding</b>.
                 </p>
-                <a className="default-button" id="hero-button">Contact</a>
+                <a className="default-button" id="hero-button" href="#footer-section">Contact</a>
                 <ScrollCircle />
             </div>
         </div>

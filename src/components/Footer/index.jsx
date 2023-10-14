@@ -5,9 +5,9 @@ export const Footer = () => {
             <footer>
                 <div className="footer-links">
                     <ul>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Linkedin</a></li>
-                        <li><a href="">Github</a></li>
+                        <li><a href="https://www.instagram.com/euenzo_f/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/enzo-farias-b24866219/">Linkedin</a></li>
+                        <li><a href="https://www.linkedin.com/in/enzo-farias-b24866219/">Github</a></li>
                     </ul>
                 </div>
                 <div className="footer-infos">
