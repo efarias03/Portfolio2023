@@ -59,7 +59,7 @@ body,
 
     scroll-behavior: smooth;
 
-    background-color: #0a0d14;
+    background-color: #eaeaea;
 }
 
 html {
@@ -170,7 +170,7 @@ html {
     color: #0a0d14;
 
     border: 3px solid #0a0d14;
-    border-radius: 2rem;
+    // border-radius: 2rem;
 
     transition: .5s ease;
 
@@ -405,6 +405,7 @@ html {
 
 #projects-section {
     height: auto;
+    background-color: #0a0d14;
 }
 
 #projects-section-header {
@@ -538,7 +539,6 @@ html {
                 width: 10rem;
                 height: 2rem;
 
-                border-radius: 15px;
                 transition: .5s ease;
 
                 a {
@@ -728,17 +728,178 @@ html {
 #contact-section {
     background-color: #eaeaea;
     color: #0a0d14;
+    padding-bottom: 5rem;
 
     #contact-header {
-        padding-top: 10rem;
+        padding: 5rem 0 ;
     }
 
-    .form-container {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         width: 100%;
+        height: 20rem;
 
-        form {
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            width: 100%;
             height: 100%;
+
+            gap: 2rem;
+    
+            .inputs {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                width: 50%;
+
+                gap: 15rem;
+    
+                .input-group {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    font-size: 1rem;
+    
+                    gap: 3%;
+                    text-wrap: nowrap;
+
+                    label {
+                        position: relative;
+                        padding-left: 2rem;
+                        // transform: translateY(125%);
+                        pointer-events: none;
+                    }
+    
+                    input {
+                        padding-left: 1rem;
+                        outline: none;
+                        border: none;
+
+                        font-family: "Poppins", sans-serif;
+                        font-size: 1rem;
+
+                        width: 20rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+
+            .message-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                width: 50%;
+                height: 100%;
+
+                .message-label {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+
+                    width: 100%;
+                    
+                    label {
+                        padding-left: 1rem;
+                        pointer-events: none;
+                    }
+                }
+
+                .message-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                textarea {
+                    border: none;
+                    resize: none;
+                    outline: none;
+                    padding: 0.5rem 1rem;
+                    font-size: 1rem;
+    
+                    width: 100%;
+                    height: 5rem;
+    
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+
+            .form-button-div {
+                padding-bottom: 1rem;
+
+                button {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 10rem;
+                    padding: 1rem;
+
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1rem;
+
+                    border: 1px solid #0a0d14;
+
+                    cursor: pointer;
+
+                    transition: .5s ease;
+                }
+                button:hover {
+                    background-color: #A0BCFE;
+                    letter-spacing: .25rem;
+
+                    transition: .5s ease;
+                }
+            }
+    
         }
+    }
+}
+
+
+#footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 3rem;
+
+    footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    ul, .footer-infos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 2rem;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    .footer-infos {
+        width: 100%;
+        justify-content: space-around;
     }
 }
 

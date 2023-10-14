@@ -31,7 +31,7 @@ function Project({ i = "01", title = "Default", tags = ["Default"], description 
                         <img loading="lazy" draggable={false} src={image} />
                     </div>
                     <a className="project-link" href={url} target="blank">
-                        See Project
+                        Visit Project
                     </a>
                 </div>
             </div>

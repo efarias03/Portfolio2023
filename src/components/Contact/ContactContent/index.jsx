@@ -5,7 +5,7 @@ export function ContactContent() {
     return (
         <section id="contact-section" className="default-section column flex">
             
-                <div className="default-container">
+                <div id="contact-header" className="default-container">
                     <h1>Want to know me?</h1>
                 </div>
 
