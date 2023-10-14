@@ -49,6 +49,10 @@ html {
   overflow-y: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .title-large {
   font-size: 8rem;
 }
@@ -157,6 +161,11 @@ html {
 
 #hero-button {
   margin-top: 1rem;
+}
+
+#hero-button:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease;
 }
 
 .default-nav {
@@ -635,7 +644,7 @@ html {
   padding: 1rem;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  border: 1px solid #0a0d14;
+  border: 2px solid #0a0d14;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -666,10 +675,26 @@ html {
 #footer-section ul a, #footer-section .footer-infos a {
   color: #ffffff;
   text-decoration: none;
+  transition: 0.5s ease;
+}
+#footer-section ul .insta-link:hover, #footer-section .footer-infos .insta-link:hover {
+  color: #F20084;
+  transition: 0.5s ease;
+}
+#footer-section ul .linkedin-link:hover, #footer-section .footer-infos .linkedin-link:hover {
+  color: #2569a8;
+  transition: 0.5s ease;
+}
+#footer-section ul .github-link:hover, #footer-section .footer-infos .github-link:hover {
+  color: #775fce;
+  transition: 0.5s ease;
 }
 #footer-section .footer-infos {
-  width: 100%;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: flex-end;
+}
+#footer-section .footer-infos span {
+  color: rgba(239, 239, 239, 0.4666666667);
 }
 
 @media (max-width: 575px) {

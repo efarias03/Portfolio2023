@@ -5,20 +5,14 @@ export const Footer = () => {
             <footer>
                 <div className="footer-links">
                     <ul>
-                        <li><a href="https://www.instagram.com/euenzo_f/">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/in/enzo-farias-b24866219/">Linkedin</a></li>
-                        <li><a href="https://www.linkedin.com/in/enzo-farias-b24866219/">Github</a></li>
+                        <li ><a className="insta-link" href="https://www.instagram.com/euenzo_f/">Instagram</a></li>
+                        <li ><a className="linkedin-link" href="https://www.linkedin.com/in/enzo-farias-b24866219/">Linkedin</a></li>
+                        <li ><a className="github-link" href="https://www.linkedin.com/in/enzo-farias-b24866219/">Github</a></li>
                     </ul>
                 </div>
                 <div className="footer-infos">
                     <span>
-                        Copywrite
-                    </span>
-                    <span>
-                        Slogan
-                    </span>
-                    <span>
-                        Site by me
+                        made with love by me   :)
                     </span>
                 </div>
             </footer>

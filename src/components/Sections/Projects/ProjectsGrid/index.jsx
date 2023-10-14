@@ -26,7 +26,7 @@ function Project({ i = "01", title = "Default", tags = ["Default"], description 
             </div>
             <div className={"project-content"}>
                 <div className="content-description">
-                    <p>{`<p>${description}</p>`}</p>
+                    <p>{`<h1>${description}</h1>`}</p>
                     <div className="description-images">
                         <img loading="lazy" draggable={false} src={image} />
                     </div>
@@ -53,6 +53,18 @@ export default function ProjectGrid() {
             description: "Simple pokedéx consuming the PokeAPI in React.js, using StyledComponents to stylize cards based on pokemon's type.",
             image: "pokedex.jpg",
             url: "https://efarias03.github.io/PokeAPI-Consuming/"
+        },
+        {
+            title: "Champions View",
+            tags: [
+                "HTML5",
+                "SCSS",
+                "React.js",
+                "ReactRouterDom"
+            ],
+            description: "A challenge by Explow Studios",
+            image: "explowchallenge.jpg",
+            url: "https://efarias03.github.io/ExplowChallengeLOL/"
         },
         {
             title: "OpenWeatherApp",
@@ -91,7 +103,8 @@ export default function ProjectGrid() {
                 "HTML",
                 "SCSS",
                 "React.js",
-                "Firebase"
+                "Firebase",
+                "ReactRouterDom"
             ],
             description: "TaskManager with account system using FireBase, just for college.",
             image: "whatnow.jpg",
