@@ -26,7 +26,7 @@ function Project({ i = "01", title = "Default", tags = ["Default"], description 
             </div>
             <div className={"project-content"}>
                 <div className="content-description">
-                    <p>{`<h1>${description}</h1>`}</p>
+                    <p>{description}</p>
                     <div className="description-images">
                         <img loading="lazy" draggable={false} src={image} />
                     </div>
