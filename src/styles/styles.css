@@ -715,7 +715,7 @@ a {
   padding: 0.5rem 1rem;
   position: fixed;
   top: 15%;
-  right: -2%;
+  right: 0;
   transform: translateX(150%);
   background: rgb(37, 175, 110);
   background: linear-gradient(90deg, rgba(37, 175, 110, 0.937412465) 0%, rgb(36, 38, 50) 44%);
