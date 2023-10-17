@@ -6,6 +6,9 @@ export function ContactForm() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("")
+    const [notificationText, setNotificationText] = useState("");
+    const [buttonStatus, setButtonStatus] = useState("Send");
+    const [loadingForm, setLoadingForm] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault()
@@ -21,15 +24,22 @@ export function ContactForm() {
             email: email
         }
 
+        setButtonStatus("Sending...")
+        setLoadingForm(true)
+    
         emailjs.send("service_hgq9qpg", "template_dwrzf7q", templateParams, "F1jTyhfQ3Ilad25mV")
             .then((res) => {
                 setName("")
                 setEmail("")
                 setMessage("")
                 setStatus("sucess")
+                setNotificationText("email sent")
+                setButtonStatus("Sent")
+                setLoadingForm(false)
 
                 setTimeout(() => {
                     setStatus("")
+                    setButtonStatus("Send")
                 }, 2500);
             })
             .catch((err) => {
@@ -48,7 +58,7 @@ export function ContactForm() {
                         <span>{status}</span>
                     </div>
                     <div className="text">
-                        <span>{status}</span>
+                        <span>{notificationText}</span>
                     </div>
                 </div>
             </div>
@@ -72,7 +82,7 @@ export function ContactForm() {
                     </div>
                 </div>
                 <div className="form-button-div">
-                    <button type="submit">Send</button>
+                    <button type="submit" className={`${loadingForm ? "heartbeat" : ""}`}>{buttonStatus}</button>
                 </div>
             </div>
         </form>
