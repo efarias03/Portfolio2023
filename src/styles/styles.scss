@@ -41,7 +41,7 @@
         transform: translateX(150%);
     }
 
-    50% {
+    30% {
         transform: translateX(0%);
     }
 
@@ -1050,7 +1050,7 @@ a {
 
         .notification.sucess {
             visibility: visible;
-            animation: animateNotification 2.5s ease-in-out forwards;
+            animation: animateNotification 4s ease-in-out forwards;
         }
     }
 }
