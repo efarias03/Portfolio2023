@@ -6,7 +6,7 @@ export function ContactContent() {
         <section id="contact-section" className="default-section column flex">
             
                 <div id="contact-header" className="default-container">
-                    <h1>Want to know me?</h1>
+                    <h1>Let's work together?</h1>
                 </div>
 
                 <ContactForm />

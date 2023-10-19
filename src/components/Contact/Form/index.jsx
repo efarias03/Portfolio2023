@@ -65,17 +65,17 @@ export function ContactForm() {
             <div className="form-container default-container">
                 <div className="inputs">
                     <div className="input-group">
-                        <label htmlFor="name" >Your name here</label>
+                        <label htmlFor="name" >Your name here:</label>
                         <input value={name} name="name" id="name" type="text" onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div className="input-group">
-                        <label htmlFor="email" >Your email here</label>
+                        <label htmlFor="email" >Your email here:</label>
                         <input value={email} name="email" id="email" type="text" onChange={(e) => setEmail(e.target.value)} required />
                     </div>
                 </div>
                 <div className="message-div">
                     <div className="message-label">
-                        <label htmlFor="message">Your cool message:</label>
+                        <label htmlFor="message">How can I help you:</label>
                     </div>
                     <div className="message-text">
                         <textarea value={message} name="message" id="message" onChange={(e) => setMessage(e.target.value)} required ></textarea>
