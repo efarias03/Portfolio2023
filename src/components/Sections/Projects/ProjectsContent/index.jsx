@@ -50,6 +50,7 @@ export function ProjectsContent() {
             </div>
 
             <ProjectGrid />
+            
         </section>
     )
 }
