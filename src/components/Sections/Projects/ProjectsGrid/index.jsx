@@ -67,6 +67,15 @@ export default function ProjectGrid() {
             url: "https://efarias03.github.io/ExplowChallengeLOL/"
         },
         {
+            title: "Clay LabRat",
+            tags: [
+                "Blender",
+            ],
+            description: "Simple 3D model of a cute rat that looks like clay",
+            image: "0002.png",
+            url: "#"
+        },
+        {
             title: "OpenWeatherApp",
             tags: [
                 "HTML5",
@@ -121,16 +130,8 @@ export default function ProjectGrid() {
             description: "Preloader using CSS, and GSAP.",
             image: "preloadergsap.jpg",
             url: "https://efarias03.github.io/preloader-gsap/"
-        },
-        {
-            title: "Luffy's hat (OnePiece)",
-            tags: [
-                "Blender",
-            ],
-            description: "Simple 3D model of Luffy's hat from One Piece",
-            image: "luffyhat.jpg",
-            url: "https://sketchfab.com/3d-models/luffys-strawhat-toon-shader-743af42bc42c4f10a3b69cfa0f55ff26"
         }
+        
     ];
 
 

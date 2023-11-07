@@ -9,7 +9,6 @@ export const App = () => {
   return (
     <>
       <NavBar />
-      <div className="texture"></div>
       <HeroContent />
       <ProjectsContent />
       <ContactContent />

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import emailjs from "@emailjs/browser"
 
 export function ContactForm() {
-    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("")
@@ -13,13 +12,12 @@ export function ContactForm() {
     function sendEmail(e) {
         e.preventDefault()
 
-        if (!name || !email || !message) {
+        if ( !email || !message) {
             alert("Inputs Vazios")
             return;
         }
 
         const templateParams = {
-            to_name: name,
             message: message,
             email: email
         }
@@ -29,7 +27,6 @@ export function ContactForm() {
     
         emailjs.send("service_hgq9qpg", "template_dwrzf7q", templateParams, "F1jTyhfQ3Ilad25mV")
             .then((res) => {
-                setName("")
                 setEmail("")
                 setMessage("")
                 setStatus("sucess")
@@ -64,10 +61,6 @@ export function ContactForm() {
             </div>
             <div className="form-container default-container">
                 <div className="inputs">
-                    <div className="input-group">
-                        <label htmlFor="name" >Your name here:</label>
-                        <input value={name} name="name" id="name" type="text" onChange={(e) => setName(e.target.value)} required />
-                    </div>
                     <div className="input-group">
                         <label htmlFor="email" >Your email here:</label>
                         <input value={email} name="email" id="email" type="text" onChange={(e) => setEmail(e.target.value)} required />

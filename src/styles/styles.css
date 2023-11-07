@@ -97,15 +97,6 @@ html {
   overflow-y: auto;
 }
 
-.texture {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.15;
-  background-image: url("/public/noisy-texture.png");
-}
-
 a {
   text-decoration: none;
 }
@@ -420,7 +411,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.8rem;
   width: 100%;
   height: auto;
   padding-bottom: 10rem;
