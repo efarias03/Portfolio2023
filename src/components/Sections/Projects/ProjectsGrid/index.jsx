@@ -73,7 +73,7 @@ export default function ProjectGrid() {
             ],
             description: "Simple 3D model of a cute rat that looks like clay",
             image: "0002.png",
-            url: "#"
+            url: "https://www.artstation.com/btcleaner"
         },
         {
             title: "3D Sculpt",
@@ -82,7 +82,7 @@ export default function ProjectGrid() {
             ],
             description: "3D Sculpt for experimental purposes",
             image: "0001.jpg",
-            url: "#"
+            url: "https://www.artstation.com/btcleaner"
         },
         {
             title: "OpenWeatherApp",
