@@ -76,6 +76,15 @@ export default function ProjectGrid() {
             url: "#"
         },
         {
+            title: "3D Sculpt",
+            tags: [
+                "Blender",
+            ],
+            description: "3D Sculpt for experimental purposes",
+            image: "0001.jpg",
+            url: "#"
+        },
+        {
             title: "OpenWeatherApp",
             tags: [
                 "HTML5",
