@@ -67,24 +67,6 @@ export default function ProjectGrid() {
             url: "https://efarias03.github.io/ExplowChallengeLOL/"
         },
         {
-            title: "Clay LabRat",
-            tags: [
-                "Blender",
-            ],
-            description: "Simple 3D model of a cute rat that looks like clay",
-            image: "0002.png",
-            url: "https://www.artstation.com/btcleaner"
-        },
-        {
-            title: "3D Sculpt",
-            tags: [
-                "Blender",
-            ],
-            description: "3D Sculpt for experimental purposes",
-            image: "0001.jpg",
-            url: "https://www.artstation.com/btcleaner"
-        },
-        {
             title: "OpenWeatherApp",
             tags: [
                 "HTML5",
