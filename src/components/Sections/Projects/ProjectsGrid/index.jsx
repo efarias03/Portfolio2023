@@ -78,26 +78,6 @@ export default function ProjectGrid() {
             url: "https://efarias03.github.io/OpenWeatherAPI/"
         },
         {
-            title: "Delivery App Wireframes",
-            tags: [
-                "Figma"
-            ],
-            description: "Basic wireframes for a Delivery App that I did long time ago.",
-            image: "wireframedelivery.jpg",
-            url: "https://www.figma.com/file/jI0D0oF7JY02FfU79LrS8W/Wireframes---Faculdade?type=design&node-id=0%3A1&mode=design&t=TJQCUPyGY5ABy9U5-1"
-        },
-        {
-            title: "ToBuyList",
-            tags: [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            description: "Fluid To Buy List using Js, you can add, edit itens and even delete. The app stores your list with LocalStorage.",
-            image: "tobuylist.jpg",
-            url: "https://efarias03.github.io/To-buy-list-js/"
-        },
-        {
             title: "TaskManager",
             tags: [
                 "HTML",
@@ -121,6 +101,17 @@ export default function ProjectGrid() {
             description: "Preloader using CSS, and GSAP.",
             image: "preloadergsap.jpg",
             url: "https://efarias03.github.io/preloader-gsap/"
+        },
+        {
+            title: "ToBuyList",
+            tags: [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            description: "Fluid To Buy List using Js, you can add, edit itens and even delete. The app stores your list with LocalStorage.",
+            image: "tobuylist.jpg",
+            url: "https://efarias03.github.io/To-buy-list-js/"
         }
         
     ];
